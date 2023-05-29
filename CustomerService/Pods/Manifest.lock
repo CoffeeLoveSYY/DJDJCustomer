@@ -1,0 +1,68 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - IQKeyboardManager (6.5.11)
+  - MJRefresh (3.7.5)
+  - SDAutoLayout (2.2.1)
+  - SDWebImage (5.15.2):
+    - SDWebImage/Core (= 5.15.2)
+  - SDWebImage/Core (5.15.2)
+  - SocketRocket (0.6.0)
+  - SVProgressHUD (2.2.5)
+  - Toast (4.0.0)
+  - TZImagePickerController (3.8.3):
+    - TZImagePickerController/Basic (= 3.8.3)
+    - TZImagePickerController/Location (= 3.8.3)
+  - TZImagePickerController/Basic (3.8.3)
+  - TZImagePickerController/Location (3.8.3)
+
+DEPENDENCIES:
+  - AFNetworking
+  - IQKeyboardManager
+  - MJRefresh
+  - SDAutoLayout
+  - SDWebImage
+  - SocketRocket
+  - SVProgressHUD
+  - Toast
+  - TZImagePickerController
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - IQKeyboardManager
+    - MJRefresh
+    - SDAutoLayout
+    - SDWebImage
+    - SocketRocket
+    - SVProgressHUD
+    - Toast
+    - TZImagePickerController
+
+SPEC CHECKSUMS:
+  AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
+  IQKeyboardManager: ef43ce1ba1e5aaf4adf222c0a46f39761f246879
+  MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
+  SDAutoLayout: 8bf6b3bbc8b01f775d4defbb4fda2ace805461be
+  SDWebImage: 8ab87d4b3e5cc4927bd47f78db6ceb0b94442577
+  SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+  TZImagePickerController: e9909edbadf7381140efc5b5c9f5bdbfd630f7d4
+
+PODFILE CHECKSUM: fede640ea077bcb00e069c58cb809f2ef59d8c6e
+
+COCOAPODS: 1.11.3

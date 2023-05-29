@@ -1,0 +1,17 @@
+platform:ios,'13.0'
+use_frameworks!
+inhibit_all_warnings!
+
+target 'CustomerService' do
+
+pod 'SDWebImage'
+pod 'TZImagePickerController'
+pod 'AFNetworking'
+pod 'MJRefresh'
+pod 'SDAutoLayout'
+pod 'IQKeyboardManager'
+pod 'Toast'
+pod 'SocketRocket'
+pod 'SVProgressHUD'
+
+end

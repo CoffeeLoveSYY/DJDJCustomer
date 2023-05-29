@@ -1,0 +1,826 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		440BA41E72E908B5862299E4 /* Pods_CustomerService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56F796AC39FE9CFC29B5F84E /* Pods_CustomerService.framework */; };
+		DC6FD60E2A24504D00454297 /* CustomerUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6FD6072A24504D00454297 /* CustomerUtils.m */; };
+		DC6FD60F2A24504D00454297 /* NSDictionary+Customer.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6FD6082A24504D00454297 /* NSDictionary+Customer.m */; };
+		DC6FD6102A24504D00454297 /* CustomerRequestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6FD6092A24504D00454297 /* CustomerRequestHelper.m */; };
+		DC6FD6112A24504D00454297 /* UIView+Customer.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6FD60B2A24504D00454297 /* UIView+Customer.m */; };
+		DC6FD6122A24504D00454297 /* UIColor+Customer.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6FD60D2A24504D00454297 /* UIColor+Customer.m */; };
+		DC6FD6332A2450E000454297 /* CustomerMessageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC6FD6132A2450DF00454297 /* CustomerMessageController.xib */; };
+		DC6FD6342A2450E000454297 /* CustomerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6FD6142A2450DF00454297 /* CustomerConfig.m */; };
+		DC6FD6352A2450E000454297 /* CustomerTextLeftMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6FD61A2A2450E000454297 /* CustomerTextLeftMessageCell.m */; };
+		DC6FD6362A2450E000454297 /* CustomerTextLeftMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC6FD61B2A2450E000454297 /* CustomerTextLeftMessageCell.xib */; };
+		DC6FD6372A2450E000454297 /* CustomerTextRightMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC6FD61C2A2450E000454297 /* CustomerTextRightMessageCell.xib */; };
+		DC6FD6382A2450E000454297 /* CustomerTextRightMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6FD61D2A2450E000454297 /* CustomerTextRightMessageCell.m */; };
+		DC6FD6392A2450E000454297 /* CustomerCouponMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC6FD61F2A2450E000454297 /* CustomerCouponMessageCell.xib */; };
+		DC6FD63A2A2450E000454297 /* CustomerCouponMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6FD6212A2450E000454297 /* CustomerCouponMessageCell.m */; };
+		DC6FD63B2A2450E000454297 /* CustomerOrderMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC6FD6242A2450E000454297 /* CustomerOrderMessageCell.xib */; };
+		DC6FD63C2A2450E000454297 /* CustomerOrderMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6FD6252A2450E000454297 /* CustomerOrderMessageCell.m */; };
+		DC6FD63D2A2450E000454297 /* CustomerTipMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC6FD6272A2450E000454297 /* CustomerTipMessageCell.xib */; };
+		DC6FD63E2A2450E000454297 /* CustomerTipMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6FD6292A2450E000454297 /* CustomerTipMessageCell.m */; };
+		DC6FD63F2A2450E000454297 /* CustomerImageLeftMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC6FD62C2A2450E000454297 /* CustomerImageLeftMessageCell.xib */; };
+		DC6FD6402A2450E000454297 /* CustomerImageRightMesaageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6FD62D2A2450E000454297 /* CustomerImageRightMesaageCell.m */; };
+		DC6FD6412A2450E000454297 /* CustomerImageRightMesaageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC6FD62E2A2450E000454297 /* CustomerImageRightMesaageCell.xib */; };
+		DC6FD6422A2450E000454297 /* CustomerImageLeftMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6FD6302A2450E000454297 /* CustomerImageLeftMessageCell.m */; };
+		DC6FD6432A2450E000454297 /* CustomerMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6FD6322A2450E000454297 /* CustomerMessageController.m */; };
+		DC6FD6712A2450FE00454297 /* MineEditInvoiceVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC6FD6452A2450FD00454297 /* MineEditInvoiceVC.xib */; };
+		DC6FD6722A2450FE00454297 /* MineEditInvoiceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6FD6472A2450FD00454297 /* MineEditInvoiceVC.m */; };
+		DC6FD6732A2450FE00454297 /* MineVoiceRecordItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6FD6492A2450FE00454297 /* MineVoiceRecordItemCell.m */; };
+		DC6FD6742A2450FE00454297 /* InvoiceSelectOrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6FD64C2A2450FE00454297 /* InvoiceSelectOrderCell.m */; };
+		DC6FD6752A2450FE00454297 /* MineInvoiceSelectOrderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6FD64D2A2450FE00454297 /* MineInvoiceSelectOrderVC.m */; };
+		DC6FD6762A2450FE00454297 /* MineInvoiceSelectOrderVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC6FD64F2A2450FE00454297 /* MineInvoiceSelectOrderVC.xib */; };
+		DC6FD6772A2450FE00454297 /* InvoiceSelectOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC6FD6502A2450FE00454297 /* InvoiceSelectOrderCell.xib */; };
+		DC6FD6782A2450FE00454297 /* MineVoiceOrderItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6FD6522A2450FE00454297 /* MineVoiceOrderItemCell.m */; };
+		DC6FD6792A2450FE00454297 /* MineVoiceOrderListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6FD6532A2450FE00454297 /* MineVoiceOrderListVC.m */; };
+		DC6FD67A2A2450FE00454297 /* MineVoiceOrderListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC6FD6552A2450FE00454297 /* MineVoiceOrderListVC.xib */; };
+		DC6FD67B2A2450FE00454297 /* MineVoiceOrderItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC6FD6572A2450FE00454297 /* MineVoiceOrderItemCell.xib */; };
+		DC6FD67C2A2450FE00454297 /* MineIInvoiceRecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6FD6582A2450FE00454297 /* MineIInvoiceRecordVC.m */; };
+		DC6FD67D2A2450FE00454297 /* MineVoiceDetailItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6FD65B2A2450FE00454297 /* MineVoiceDetailItemCell.m */; };
+		DC6FD67E2A2450FE00454297 /* MineVoiceDetailItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC6FD65D2A2450FE00454297 /* MineVoiceDetailItemCell.xib */; };
+		DC6FD67F2A2450FE00454297 /* MineMakeInvoiceItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6FD65F2A2450FE00454297 /* MineMakeInvoiceItemCell.m */; };
+		DC6FD6802A2450FE00454297 /* MineMakeInvoiceItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC6FD6602A2450FE00454297 /* MineMakeInvoiceItemCell.xib */; };
+		DC6FD6812A2450FE00454297 /* MineVoiceRecordItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC6FD6622A2450FE00454297 /* MineVoiceRecordItemCell.xib */; };
+		DC6FD6822A2450FE00454297 /* MineIInvoiceRecordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC6FD6632A2450FE00454297 /* MineIInvoiceRecordVC.xib */; };
+		DC6FD6832A2450FE00454297 /* MineVoiceDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC6FD6662A2450FE00454297 /* MineVoiceDetailVC.xib */; };
+		DC6FD6842A2450FE00454297 /* MineVoiceDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6FD6672A2450FE00454297 /* MineVoiceDetailVC.m */; };
+		DC6FD6852A2450FE00454297 /* MineInvoiceCommentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6FD66A2A2450FE00454297 /* MineInvoiceCommentVC.m */; };
+		DC6FD6862A2450FE00454297 /* MineInvoiceCommentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC6FD66C2A2450FE00454297 /* MineInvoiceCommentVC.xib */; };
+		DC6FD6872A2450FE00454297 /* MineMakeVoiceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6FD66E2A2450FE00454297 /* MineMakeVoiceVC.m */; };
+		DC6FD6882A2450FE00454297 /* MineMakeVoiceVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC6FD6702A2450FE00454297 /* MineMakeVoiceVC.xib */; };
+		DC6FD68C2A2452DE00454297 /* CustomerReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6FD68B2A2452DE00454297 /* CustomerReachability.m */; };
+		DC8656E42A1F32220084BCFB /* LPLevelView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8656E22A1F32220084BCFB /* LPLevelView.m */; };
+		DCA7D30F2A1B468500540546 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA7D30E2A1B468500540546 /* AppDelegate.m */; };
+		DCA7D31A2A1B468700540546 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCA7D3192A1B468700540546 /* Assets.xcassets */; };
+		DCA7D31D2A1B468700540546 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCA7D31B2A1B468700540546 /* LaunchScreen.storyboard */; };
+		DCA7D3202A1B468700540546 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA7D31F2A1B468700540546 /* main.m */; };
+		DCA7D35B2A1B47E100540546 /* CustomerBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA7D3572A1B47E100540546 /* CustomerBaseNavigationController.m */; };
+		DCA7D35C2A1B47E100540546 /* CustomerBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA7D3592A1B47E100540546 /* CustomerBaseViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1741CBB25A37D694BB6C91B8 /* Pods-CustomerService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomerService.release.xcconfig"; path = "Target Support Files/Pods-CustomerService/Pods-CustomerService.release.xcconfig"; sourceTree = "<group>"; };
+		56F796AC39FE9CFC29B5F84E /* Pods_CustomerService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomerService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82DB0DB7CA4F4EB7BE5BCDF6 /* Pods-CustomerService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomerService.debug.xcconfig"; path = "Target Support Files/Pods-CustomerService/Pods-CustomerService.debug.xcconfig"; sourceTree = "<group>"; };
+		DC6FD6042A24504D00454297 /* CustomerRequestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerRequestHelper.h; sourceTree = "<group>"; };
+		DC6FD6052A24504D00454297 /* UIView+Customer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Customer.h"; sourceTree = "<group>"; };
+		DC6FD6062A24504D00454297 /* UIColor+Customer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Customer.h"; sourceTree = "<group>"; };
+		DC6FD6072A24504D00454297 /* CustomerUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerUtils.m; sourceTree = "<group>"; };
+		DC6FD6082A24504D00454297 /* NSDictionary+Customer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Customer.m"; sourceTree = "<group>"; };
+		DC6FD6092A24504D00454297 /* CustomerRequestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerRequestHelper.m; sourceTree = "<group>"; };
+		DC6FD60A2A24504D00454297 /* CustomerUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerUtils.h; sourceTree = "<group>"; };
+		DC6FD60B2A24504D00454297 /* UIView+Customer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Customer.m"; sourceTree = "<group>"; };
+		DC6FD60C2A24504D00454297 /* NSDictionary+Customer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Customer.h"; sourceTree = "<group>"; };
+		DC6FD60D2A24504D00454297 /* UIColor+Customer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Customer.m"; sourceTree = "<group>"; };
+		DC6FD6132A2450DF00454297 /* CustomerMessageController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomerMessageController.xib; sourceTree = "<group>"; };
+		DC6FD6142A2450DF00454297 /* CustomerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerConfig.m; sourceTree = "<group>"; };
+		DC6FD6152A2450DF00454297 /* CustomerMessageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerMessageController.h; sourceTree = "<group>"; };
+		DC6FD6182A2450E000454297 /* CustomerTextLeftMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerTextLeftMessageCell.h; sourceTree = "<group>"; };
+		DC6FD6192A2450E000454297 /* CustomerTextRightMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerTextRightMessageCell.h; sourceTree = "<group>"; };
+		DC6FD61A2A2450E000454297 /* CustomerTextLeftMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerTextLeftMessageCell.m; sourceTree = "<group>"; };
+		DC6FD61B2A2450E000454297 /* CustomerTextLeftMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomerTextLeftMessageCell.xib; sourceTree = "<group>"; };
+		DC6FD61C2A2450E000454297 /* CustomerTextRightMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomerTextRightMessageCell.xib; sourceTree = "<group>"; };
+		DC6FD61D2A2450E000454297 /* CustomerTextRightMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerTextRightMessageCell.m; sourceTree = "<group>"; };
+		DC6FD61F2A2450E000454297 /* CustomerCouponMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomerCouponMessageCell.xib; sourceTree = "<group>"; };
+		DC6FD6202A2450E000454297 /* CustomerCouponMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerCouponMessageCell.h; sourceTree = "<group>"; };
+		DC6FD6212A2450E000454297 /* CustomerCouponMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerCouponMessageCell.m; sourceTree = "<group>"; };
+		DC6FD6232A2450E000454297 /* CustomerOrderMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerOrderMessageCell.h; sourceTree = "<group>"; };
+		DC6FD6242A2450E000454297 /* CustomerOrderMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomerOrderMessageCell.xib; sourceTree = "<group>"; };
+		DC6FD6252A2450E000454297 /* CustomerOrderMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerOrderMessageCell.m; sourceTree = "<group>"; };
+		DC6FD6272A2450E000454297 /* CustomerTipMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomerTipMessageCell.xib; sourceTree = "<group>"; };
+		DC6FD6282A2450E000454297 /* CustomerTipMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerTipMessageCell.h; sourceTree = "<group>"; };
+		DC6FD6292A2450E000454297 /* CustomerTipMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerTipMessageCell.m; sourceTree = "<group>"; };
+		DC6FD62B2A2450E000454297 /* CustomerImageLeftMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerImageLeftMessageCell.h; sourceTree = "<group>"; };
+		DC6FD62C2A2450E000454297 /* CustomerImageLeftMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomerImageLeftMessageCell.xib; sourceTree = "<group>"; };
+		DC6FD62D2A2450E000454297 /* CustomerImageRightMesaageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerImageRightMesaageCell.m; sourceTree = "<group>"; };
+		DC6FD62E2A2450E000454297 /* CustomerImageRightMesaageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomerImageRightMesaageCell.xib; sourceTree = "<group>"; };
+		DC6FD62F2A2450E000454297 /* CustomerImageRightMesaageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerImageRightMesaageCell.h; sourceTree = "<group>"; };
+		DC6FD6302A2450E000454297 /* CustomerImageLeftMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerImageLeftMessageCell.m; sourceTree = "<group>"; };
+		DC6FD6312A2450E000454297 /* CustomerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerConfig.h; sourceTree = "<group>"; };
+		DC6FD6322A2450E000454297 /* CustomerMessageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerMessageController.m; sourceTree = "<group>"; };
+		DC6FD6452A2450FD00454297 /* MineEditInvoiceVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineEditInvoiceVC.xib; sourceTree = "<group>"; };
+		DC6FD6462A2450FD00454297 /* MineEditInvoiceVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineEditInvoiceVC.h; sourceTree = "<group>"; };
+		DC6FD6472A2450FD00454297 /* MineEditInvoiceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineEditInvoiceVC.m; sourceTree = "<group>"; };
+		DC6FD6482A2450FE00454297 /* MineIInvoiceRecordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineIInvoiceRecordVC.h; sourceTree = "<group>"; };
+		DC6FD6492A2450FE00454297 /* MineVoiceRecordItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineVoiceRecordItemCell.m; sourceTree = "<group>"; };
+		DC6FD64B2A2450FE00454297 /* MineInvoiceSelectOrderVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineInvoiceSelectOrderVC.h; sourceTree = "<group>"; };
+		DC6FD64C2A2450FE00454297 /* InvoiceSelectOrderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvoiceSelectOrderCell.m; sourceTree = "<group>"; };
+		DC6FD64D2A2450FE00454297 /* MineInvoiceSelectOrderVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineInvoiceSelectOrderVC.m; sourceTree = "<group>"; };
+		DC6FD64E2A2450FE00454297 /* InvoiceSelectOrderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvoiceSelectOrderCell.h; sourceTree = "<group>"; };
+		DC6FD64F2A2450FE00454297 /* MineInvoiceSelectOrderVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineInvoiceSelectOrderVC.xib; sourceTree = "<group>"; };
+		DC6FD6502A2450FE00454297 /* InvoiceSelectOrderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InvoiceSelectOrderCell.xib; sourceTree = "<group>"; };
+		DC6FD6522A2450FE00454297 /* MineVoiceOrderItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineVoiceOrderItemCell.m; sourceTree = "<group>"; };
+		DC6FD6532A2450FE00454297 /* MineVoiceOrderListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineVoiceOrderListVC.m; sourceTree = "<group>"; };
+		DC6FD6542A2450FE00454297 /* MineVoiceOrderItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineVoiceOrderItemCell.h; sourceTree = "<group>"; };
+		DC6FD6552A2450FE00454297 /* MineVoiceOrderListVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineVoiceOrderListVC.xib; sourceTree = "<group>"; };
+		DC6FD6562A2450FE00454297 /* MineVoiceOrderListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineVoiceOrderListVC.h; sourceTree = "<group>"; };
+		DC6FD6572A2450FE00454297 /* MineVoiceOrderItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineVoiceOrderItemCell.xib; sourceTree = "<group>"; };
+		DC6FD6582A2450FE00454297 /* MineIInvoiceRecordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineIInvoiceRecordVC.m; sourceTree = "<group>"; };
+		DC6FD65B2A2450FE00454297 /* MineVoiceDetailItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineVoiceDetailItemCell.m; sourceTree = "<group>"; };
+		DC6FD65C2A2450FE00454297 /* MineVoiceDetailItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineVoiceDetailItemCell.h; sourceTree = "<group>"; };
+		DC6FD65D2A2450FE00454297 /* MineVoiceDetailItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineVoiceDetailItemCell.xib; sourceTree = "<group>"; };
+		DC6FD65F2A2450FE00454297 /* MineMakeInvoiceItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineMakeInvoiceItemCell.m; sourceTree = "<group>"; };
+		DC6FD6602A2450FE00454297 /* MineMakeInvoiceItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineMakeInvoiceItemCell.xib; sourceTree = "<group>"; };
+		DC6FD6612A2450FE00454297 /* MineMakeInvoiceItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineMakeInvoiceItemCell.h; sourceTree = "<group>"; };
+		DC6FD6622A2450FE00454297 /* MineVoiceRecordItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineVoiceRecordItemCell.xib; sourceTree = "<group>"; };
+		DC6FD6632A2450FE00454297 /* MineIInvoiceRecordVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineIInvoiceRecordVC.xib; sourceTree = "<group>"; };
+		DC6FD6652A2450FE00454297 /* MineVoiceDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineVoiceDetailVC.h; sourceTree = "<group>"; };
+		DC6FD6662A2450FE00454297 /* MineVoiceDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineVoiceDetailVC.xib; sourceTree = "<group>"; };
+		DC6FD6672A2450FE00454297 /* MineVoiceDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineVoiceDetailVC.m; sourceTree = "<group>"; };
+		DC6FD6682A2450FE00454297 /* MineVoiceRecordItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineVoiceRecordItemCell.h; sourceTree = "<group>"; };
+		DC6FD66A2A2450FE00454297 /* MineInvoiceCommentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineInvoiceCommentVC.m; sourceTree = "<group>"; };
+		DC6FD66B2A2450FE00454297 /* MineInvoiceCommentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineInvoiceCommentVC.h; sourceTree = "<group>"; };
+		DC6FD66C2A2450FE00454297 /* MineInvoiceCommentVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineInvoiceCommentVC.xib; sourceTree = "<group>"; };
+		DC6FD66E2A2450FE00454297 /* MineMakeVoiceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineMakeVoiceVC.m; sourceTree = "<group>"; };
+		DC6FD66F2A2450FE00454297 /* MineMakeVoiceVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineMakeVoiceVC.h; sourceTree = "<group>"; };
+		DC6FD6702A2450FE00454297 /* MineMakeVoiceVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineMakeVoiceVC.xib; sourceTree = "<group>"; };
+		DC6FD68A2A2452DE00454297 /* CustomerReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerReachability.h; sourceTree = "<group>"; };
+		DC6FD68B2A2452DE00454297 /* CustomerReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerReachability.m; sourceTree = "<group>"; };
+		DC8656E22A1F32220084BCFB /* LPLevelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPLevelView.m; sourceTree = "<group>"; };
+		DC8656E32A1F32220084BCFB /* LPLevelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPLevelView.h; sourceTree = "<group>"; };
+		DCA7D30A2A1B468500540546 /* CustomerService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomerService.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCA7D30D2A1B468500540546 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DCA7D30E2A1B468500540546 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DCA7D3192A1B468700540546 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCA7D31C2A1B468700540546 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DCA7D31E2A1B468700540546 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCA7D31F2A1B468700540546 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DCA7D3282A1B46DA00540546 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		DCA7D3572A1B47E100540546 /* CustomerBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerBaseNavigationController.m; sourceTree = "<group>"; };
+		DCA7D3582A1B47E100540546 /* CustomerBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerBaseViewController.h; sourceTree = "<group>"; };
+		DCA7D3592A1B47E100540546 /* CustomerBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerBaseViewController.m; sourceTree = "<group>"; };
+		DCA7D35A2A1B47E100540546 /* CustomerBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerBaseNavigationController.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCA7D3072A1B468500540546 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				440BA41E72E908B5862299E4 /* Pods_CustomerService.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16FF4B64499287D3D2244400 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				82DB0DB7CA4F4EB7BE5BCDF6 /* Pods-CustomerService.debug.xcconfig */,
+				1741CBB25A37D694BB6C91B8 /* Pods-CustomerService.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B63931A0C0E93598ED275EE7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56F796AC39FE9CFC29B5F84E /* Pods_CustomerService.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC6FD6162A2450E000454297 /* 消息tableviewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DC6FD6172A2450E000454297 /* 文本消息 */,
+				DC6FD61E2A2450E000454297 /* 优惠券消息 */,
+				DC6FD6222A2450E000454297 /* 订单消息 */,
+				DC6FD6262A2450E000454297 /* 提示消息 */,
+				DC6FD62A2A2450E000454297 /* 图片消息 */,
+			);
+			path = "消息tableviewCell";
+			sourceTree = "<group>";
+		};
+		DC6FD6172A2450E000454297 /* 文本消息 */ = {
+			isa = PBXGroup;
+			children = (
+				DC6FD6182A2450E000454297 /* CustomerTextLeftMessageCell.h */,
+				DC6FD6192A2450E000454297 /* CustomerTextRightMessageCell.h */,
+				DC6FD61A2A2450E000454297 /* CustomerTextLeftMessageCell.m */,
+				DC6FD61B2A2450E000454297 /* CustomerTextLeftMessageCell.xib */,
+				DC6FD61C2A2450E000454297 /* CustomerTextRightMessageCell.xib */,
+				DC6FD61D2A2450E000454297 /* CustomerTextRightMessageCell.m */,
+			);
+			path = "文本消息";
+			sourceTree = "<group>";
+		};
+		DC6FD61E2A2450E000454297 /* 优惠券消息 */ = {
+			isa = PBXGroup;
+			children = (
+				DC6FD61F2A2450E000454297 /* CustomerCouponMessageCell.xib */,
+				DC6FD6202A2450E000454297 /* CustomerCouponMessageCell.h */,
+				DC6FD6212A2450E000454297 /* CustomerCouponMessageCell.m */,
+			);
+			path = "优惠券消息";
+			sourceTree = "<group>";
+		};
+		DC6FD6222A2450E000454297 /* 订单消息 */ = {
+			isa = PBXGroup;
+			children = (
+				DC6FD6232A2450E000454297 /* CustomerOrderMessageCell.h */,
+				DC6FD6242A2450E000454297 /* CustomerOrderMessageCell.xib */,
+				DC6FD6252A2450E000454297 /* CustomerOrderMessageCell.m */,
+			);
+			path = "订单消息";
+			sourceTree = "<group>";
+		};
+		DC6FD6262A2450E000454297 /* 提示消息 */ = {
+			isa = PBXGroup;
+			children = (
+				DC6FD6272A2450E000454297 /* CustomerTipMessageCell.xib */,
+				DC6FD6282A2450E000454297 /* CustomerTipMessageCell.h */,
+				DC6FD6292A2450E000454297 /* CustomerTipMessageCell.m */,
+			);
+			path = "提示消息";
+			sourceTree = "<group>";
+		};
+		DC6FD62A2A2450E000454297 /* 图片消息 */ = {
+			isa = PBXGroup;
+			children = (
+				DC6FD62B2A2450E000454297 /* CustomerImageLeftMessageCell.h */,
+				DC6FD62C2A2450E000454297 /* CustomerImageLeftMessageCell.xib */,
+				DC6FD62D2A2450E000454297 /* CustomerImageRightMesaageCell.m */,
+				DC6FD62E2A2450E000454297 /* CustomerImageRightMesaageCell.xib */,
+				DC6FD62F2A2450E000454297 /* CustomerImageRightMesaageCell.h */,
+				DC6FD6302A2450E000454297 /* CustomerImageLeftMessageCell.m */,
+			);
+			path = "图片消息";
+			sourceTree = "<group>";
+		};
+		DC6FD6442A2450FD00454297 /* 换开发票 */ = {
+			isa = PBXGroup;
+			children = (
+				DC6FD6462A2450FD00454297 /* MineEditInvoiceVC.h */,
+				DC6FD6472A2450FD00454297 /* MineEditInvoiceVC.m */,
+				DC6FD6452A2450FD00454297 /* MineEditInvoiceVC.xib */,
+			);
+			path = "换开发票";
+			sourceTree = "<group>";
+		};
+		DC6FD64A2A2450FE00454297 /* 选择订单 */ = {
+			isa = PBXGroup;
+			children = (
+				DC6FD64B2A2450FE00454297 /* MineInvoiceSelectOrderVC.h */,
+				DC6FD64D2A2450FE00454297 /* MineInvoiceSelectOrderVC.m */,
+				DC6FD64F2A2450FE00454297 /* MineInvoiceSelectOrderVC.xib */,
+				DC6FD64E2A2450FE00454297 /* InvoiceSelectOrderCell.h */,
+				DC6FD64C2A2450FE00454297 /* InvoiceSelectOrderCell.m */,
+				DC6FD6502A2450FE00454297 /* InvoiceSelectOrderCell.xib */,
+			);
+			path = "选择订单";
+			sourceTree = "<group>";
+		};
+		DC6FD6512A2450FE00454297 /* 发票服务 */ = {
+			isa = PBXGroup;
+			children = (
+				DC6FD6562A2450FE00454297 /* MineVoiceOrderListVC.h */,
+				DC6FD6532A2450FE00454297 /* MineVoiceOrderListVC.m */,
+				DC6FD6552A2450FE00454297 /* MineVoiceOrderListVC.xib */,
+				DC6FD6542A2450FE00454297 /* MineVoiceOrderItemCell.h */,
+				DC6FD6522A2450FE00454297 /* MineVoiceOrderItemCell.m */,
+				DC6FD6572A2450FE00454297 /* MineVoiceOrderItemCell.xib */,
+			);
+			path = "发票服务";
+			sourceTree = "<group>";
+		};
+		DC6FD6642A2450FE00454297 /* 开票详情 */ = {
+			isa = PBXGroup;
+			children = (
+				DC6FD6652A2450FE00454297 /* MineVoiceDetailVC.h */,
+				DC6FD6672A2450FE00454297 /* MineVoiceDetailVC.m */,
+				DC6FD6662A2450FE00454297 /* MineVoiceDetailVC.xib */,
+				DC6FD65C2A2450FE00454297 /* MineVoiceDetailItemCell.h */,
+				DC6FD65B2A2450FE00454297 /* MineVoiceDetailItemCell.m */,
+				DC6FD65D2A2450FE00454297 /* MineVoiceDetailItemCell.xib */,
+			);
+			path = "开票详情";
+			sourceTree = "<group>";
+		};
+		DC6FD6692A2450FE00454297 /* 客服评价 */ = {
+			isa = PBXGroup;
+			children = (
+				DC6FD66B2A2450FE00454297 /* MineInvoiceCommentVC.h */,
+				DC6FD66A2A2450FE00454297 /* MineInvoiceCommentVC.m */,
+				DC6FD66C2A2450FE00454297 /* MineInvoiceCommentVC.xib */,
+			);
+			path = "客服评价";
+			sourceTree = "<group>";
+		};
+		DC6FD66D2A2450FE00454297 /* 申请开票 */ = {
+			isa = PBXGroup;
+			children = (
+				DC6FD66F2A2450FE00454297 /* MineMakeVoiceVC.h */,
+				DC6FD66E2A2450FE00454297 /* MineMakeVoiceVC.m */,
+				DC6FD6702A2450FE00454297 /* MineMakeVoiceVC.xib */,
+				DC6FD65F2A2450FE00454297 /* MineMakeInvoiceItemCell.m */,
+				DC6FD6602A2450FE00454297 /* MineMakeInvoiceItemCell.xib */,
+				DC6FD6612A2450FE00454297 /* MineMakeInvoiceItemCell.h */,
+			);
+			path = "申请开票";
+			sourceTree = "<group>";
+		};
+		DC6FD6892A24510600454297 /* 开票记录 */ = {
+			isa = PBXGroup;
+			children = (
+				DC6FD6482A2450FE00454297 /* MineIInvoiceRecordVC.h */,
+				DC6FD6582A2450FE00454297 /* MineIInvoiceRecordVC.m */,
+				DC6FD6632A2450FE00454297 /* MineIInvoiceRecordVC.xib */,
+				DC6FD6682A2450FE00454297 /* MineVoiceRecordItemCell.h */,
+				DC6FD6492A2450FE00454297 /* MineVoiceRecordItemCell.m */,
+				DC6FD6622A2450FE00454297 /* MineVoiceRecordItemCell.xib */,
+			);
+			path = "开票记录";
+			sourceTree = "<group>";
+		};
+		DC8656992A1F31B20084BCFB /* 开票记录 */ = {
+			isa = PBXGroup;
+			children = (
+				DC6FD6892A24510600454297 /* 开票记录 */,
+				DC6FD6442A2450FD00454297 /* 换开发票 */,
+				DC6FD6512A2450FE00454297 /* 发票服务 */,
+				DC6FD6642A2450FE00454297 /* 开票详情 */,
+				DC6FD6692A2450FE00454297 /* 客服评价 */,
+				DC6FD66D2A2450FE00454297 /* 申请开票 */,
+				DC6FD64A2A2450FE00454297 /* 选择订单 */,
+			);
+			path = "开票记录";
+			sourceTree = "<group>";
+		};
+		DCA7D3012A1B468500540546 = {
+			isa = PBXGroup;
+			children = (
+				DCA7D30C2A1B468500540546 /* CustomerService */,
+				DCA7D30B2A1B468500540546 /* Products */,
+				16FF4B64499287D3D2244400 /* Pods */,
+				B63931A0C0E93598ED275EE7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DCA7D30B2A1B468500540546 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCA7D30A2A1B468500540546 /* CustomerService.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCA7D30C2A1B468500540546 /* CustomerService */ = {
+			isa = PBXGroup;
+			children = (
+				DCA7D35D2A1B491400540546 /* Tool */,
+				DCA7D3272A1B46B700540546 /* BaseViewController */,
+				DCA7D3262A1B46B100540546 /* ViewController */,
+				DCA7D30D2A1B468500540546 /* AppDelegate.h */,
+				DCA7D30E2A1B468500540546 /* AppDelegate.m */,
+				DCA7D3192A1B468700540546 /* Assets.xcassets */,
+				DCA7D31B2A1B468700540546 /* LaunchScreen.storyboard */,
+				DCA7D31E2A1B468700540546 /* Info.plist */,
+				DCA7D31F2A1B468700540546 /* main.m */,
+				DCA7D3282A1B46DA00540546 /* PrefixHeader.pch */,
+			);
+			path = CustomerService;
+			sourceTree = "<group>";
+		};
+		DCA7D3262A1B46B100540546 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DC8656992A1F31B20084BCFB /* 开票记录 */,
+				DCA7D32A2A1B476300540546 /* 客服消息 */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DCA7D3272A1B46B700540546 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DCA7D35A2A1B47E100540546 /* CustomerBaseNavigationController.h */,
+				DCA7D3572A1B47E100540546 /* CustomerBaseNavigationController.m */,
+				DCA7D3582A1B47E100540546 /* CustomerBaseViewController.h */,
+				DCA7D3592A1B47E100540546 /* CustomerBaseViewController.m */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		DCA7D32A2A1B476300540546 /* 客服消息 */ = {
+			isa = PBXGroup;
+			children = (
+				DC6FD6162A2450E000454297 /* 消息tableviewCell */,
+				DC6FD6152A2450DF00454297 /* CustomerMessageController.h */,
+				DC6FD6322A2450E000454297 /* CustomerMessageController.m */,
+				DC6FD6132A2450DF00454297 /* CustomerMessageController.xib */,
+				DC6FD6312A2450E000454297 /* CustomerConfig.h */,
+				DC6FD6142A2450DF00454297 /* CustomerConfig.m */,
+			);
+			path = "客服消息";
+			sourceTree = "<group>";
+		};
+		DCA7D35D2A1B491400540546 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				DC6FD60A2A24504D00454297 /* CustomerUtils.h */,
+				DC6FD6072A24504D00454297 /* CustomerUtils.m */,
+				DC6FD68A2A2452DE00454297 /* CustomerReachability.h */,
+				DC6FD68B2A2452DE00454297 /* CustomerReachability.m */,
+				DC6FD6042A24504D00454297 /* CustomerRequestHelper.h */,
+				DC6FD6092A24504D00454297 /* CustomerRequestHelper.m */,
+				DC8656E32A1F32220084BCFB /* LPLevelView.h */,
+				DC8656E22A1F32220084BCFB /* LPLevelView.m */,
+				DC6FD6052A24504D00454297 /* UIView+Customer.h */,
+				DC6FD60B2A24504D00454297 /* UIView+Customer.m */,
+				DC6FD6062A24504D00454297 /* UIColor+Customer.h */,
+				DC6FD60D2A24504D00454297 /* UIColor+Customer.m */,
+				DC6FD60C2A24504D00454297 /* NSDictionary+Customer.h */,
+				DC6FD6082A24504D00454297 /* NSDictionary+Customer.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCA7D3092A1B468500540546 /* CustomerService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCA7D3232A1B468700540546 /* Build configuration list for PBXNativeTarget "CustomerService" */;
+			buildPhases = (
+				E5004261A4052A0E400A40C0 /* [CP] Check Pods Manifest.lock */,
+				DCA7D3062A1B468500540546 /* Sources */,
+				DCA7D3072A1B468500540546 /* Frameworks */,
+				DCA7D3082A1B468500540546 /* Resources */,
+				C5FBFD07DA10A134900B27FA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomerService;
+			productName = CustomerService;
+			productReference = DCA7D30A2A1B468500540546 /* CustomerService.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCA7D3022A1B468500540546 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					DCA7D3092A1B468500540546 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = DCA7D3052A1B468500540546 /* Build configuration list for PBXProject "CustomerService" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCA7D3012A1B468500540546;
+			productRefGroup = DCA7D30B2A1B468500540546 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCA7D3092A1B468500540546 /* CustomerService */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCA7D3082A1B468500540546 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC6FD6762A2450FE00454297 /* MineInvoiceSelectOrderVC.xib in Resources */,
+				DC6FD6832A2450FE00454297 /* MineVoiceDetailVC.xib in Resources */,
+				DC6FD6812A2450FE00454297 /* MineVoiceRecordItemCell.xib in Resources */,
+				DC6FD6412A2450E000454297 /* CustomerImageRightMesaageCell.xib in Resources */,
+				DC6FD63B2A2450E000454297 /* CustomerOrderMessageCell.xib in Resources */,
+				DC6FD6392A2450E000454297 /* CustomerCouponMessageCell.xib in Resources */,
+				DC6FD6712A2450FE00454297 /* MineEditInvoiceVC.xib in Resources */,
+				DC6FD6802A2450FE00454297 /* MineMakeInvoiceItemCell.xib in Resources */,
+				DC6FD6882A2450FE00454297 /* MineMakeVoiceVC.xib in Resources */,
+				DC6FD6372A2450E000454297 /* CustomerTextRightMessageCell.xib in Resources */,
+				DC6FD6362A2450E000454297 /* CustomerTextLeftMessageCell.xib in Resources */,
+				DC6FD63F2A2450E000454297 /* CustomerImageLeftMessageCell.xib in Resources */,
+				DC6FD6862A2450FE00454297 /* MineInvoiceCommentVC.xib in Resources */,
+				DC6FD63D2A2450E000454297 /* CustomerTipMessageCell.xib in Resources */,
+				DC6FD6772A2450FE00454297 /* InvoiceSelectOrderCell.xib in Resources */,
+				DCA7D31D2A1B468700540546 /* LaunchScreen.storyboard in Resources */,
+				DC6FD67A2A2450FE00454297 /* MineVoiceOrderListVC.xib in Resources */,
+				DCA7D31A2A1B468700540546 /* Assets.xcassets in Resources */,
+				DC6FD67E2A2450FE00454297 /* MineVoiceDetailItemCell.xib in Resources */,
+				DC6FD67B2A2450FE00454297 /* MineVoiceOrderItemCell.xib in Resources */,
+				DC6FD6332A2450E000454297 /* CustomerMessageController.xib in Resources */,
+				DC6FD6822A2450FE00454297 /* MineIInvoiceRecordVC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C5FBFD07DA10A134900B27FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustomerService/Pods-CustomerService-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustomerService/Pods-CustomerService-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CustomerService/Pods-CustomerService-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5004261A4052A0E400A40C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CustomerService-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCA7D3062A1B468500540546 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCA7D30F2A1B468500540546 /* AppDelegate.m in Sources */,
+				DC6FD6342A2450E000454297 /* CustomerConfig.m in Sources */,
+				DC6FD6402A2450E000454297 /* CustomerImageRightMesaageCell.m in Sources */,
+				DC6FD6722A2450FE00454297 /* MineEditInvoiceVC.m in Sources */,
+				DC6FD60E2A24504D00454297 /* CustomerUtils.m in Sources */,
+				DC6FD6122A24504D00454297 /* UIColor+Customer.m in Sources */,
+				DC6FD67C2A2450FE00454297 /* MineIInvoiceRecordVC.m in Sources */,
+				DC6FD6352A2450E000454297 /* CustomerTextLeftMessageCell.m in Sources */,
+				DCA7D35B2A1B47E100540546 /* CustomerBaseNavigationController.m in Sources */,
+				DC6FD63E2A2450E000454297 /* CustomerTipMessageCell.m in Sources */,
+				DC6FD63C2A2450E000454297 /* CustomerOrderMessageCell.m in Sources */,
+				DCA7D35C2A1B47E100540546 /* CustomerBaseViewController.m in Sources */,
+				DC6FD6432A2450E000454297 /* CustomerMessageController.m in Sources */,
+				DC6FD6752A2450FE00454297 /* MineInvoiceSelectOrderVC.m in Sources */,
+				DC6FD6422A2450E000454297 /* CustomerImageLeftMessageCell.m in Sources */,
+				DC6FD6852A2450FE00454297 /* MineInvoiceCommentVC.m in Sources */,
+				DC6FD6102A24504D00454297 /* CustomerRequestHelper.m in Sources */,
+				DC8656E42A1F32220084BCFB /* LPLevelView.m in Sources */,
+				DC6FD6872A2450FE00454297 /* MineMakeVoiceVC.m in Sources */,
+				DC6FD6732A2450FE00454297 /* MineVoiceRecordItemCell.m in Sources */,
+				DCA7D3202A1B468700540546 /* main.m in Sources */,
+				DC6FD6842A2450FE00454297 /* MineVoiceDetailVC.m in Sources */,
+				DC6FD60F2A24504D00454297 /* NSDictionary+Customer.m in Sources */,
+				DC6FD6742A2450FE00454297 /* InvoiceSelectOrderCell.m in Sources */,
+				DC6FD6792A2450FE00454297 /* MineVoiceOrderListVC.m in Sources */,
+				DC6FD6382A2450E000454297 /* CustomerTextRightMessageCell.m in Sources */,
+				DC6FD68C2A2452DE00454297 /* CustomerReachability.m in Sources */,
+				DC6FD67D2A2450FE00454297 /* MineVoiceDetailItemCell.m in Sources */,
+				DC6FD6782A2450FE00454297 /* MineVoiceOrderItemCell.m in Sources */,
+				DC6FD6112A24504D00454297 /* UIView+Customer.m in Sources */,
+				DC6FD63A2A2450E000454297 /* CustomerCouponMessageCell.m in Sources */,
+				DC6FD67F2A2450FE00454297 /* MineMakeInvoiceItemCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DCA7D31B2A1B468700540546 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCA7D31C2A1B468700540546 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCA7D3212A1B468700540546 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DCA7D3222A1B468700540546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCA7D3242A1B468700540546 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82DB0DB7CA4F4EB7BE5BCDF6 /* Pods-CustomerService.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5AUQT54U6Y;
+				GCC_PREFIX_HEADER = "${SRCROOT}/CustomerService/PrefixHeader.pch";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CustomerService/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dydj.CustomerService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DCA7D3252A1B468700540546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1741CBB25A37D694BB6C91B8 /* Pods-CustomerService.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5AUQT54U6Y;
+				GCC_PREFIX_HEADER = "${SRCROOT}/CustomerService/PrefixHeader.pch";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CustomerService/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dydj.CustomerService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCA7D3052A1B468500540546 /* Build configuration list for PBXProject "CustomerService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCA7D3212A1B468700540546 /* Debug */,
+				DCA7D3222A1B468700540546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCA7D3232A1B468700540546 /* Build configuration list for PBXNativeTarget "CustomerService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCA7D3242A1B468700540546 /* Debug */,
+				DCA7D3252A1B468700540546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCA7D3022A1B468500540546 /* Project object */;
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="95" id="KGk-i7-Jjw" customClass="CustomerImageRightMesaageCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vtM-GY-p24">
+                        <rect key="frame" x="264" y="10" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="756-BA-l1x"/>
+                            <constraint firstAttribute="width" constant="40" id="AlH-xu-QDM"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dZg-26-r7Y">
+                        <rect key="frame" x="185" y="10" width="69" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="QS1-fR-C9r"/>
+                            <constraint firstAttribute="width" constant="69" id="QT0-AJ-uPP"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vtM-GY-p24" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="57f-qO-AdO"/>
+                    <constraint firstItem="dZg-26-r7Y" firstAttribute="top" secondItem="vtM-GY-p24" secondAttribute="top" id="9Rg-b7-2xl"/>
+                    <constraint firstAttribute="bottom" secondItem="dZg-26-r7Y" secondAttribute="bottom" constant="10" id="r3k-Jl-0s6"/>
+                    <constraint firstAttribute="trailing" secondItem="vtM-GY-p24" secondAttribute="trailing" constant="16" id="sKJ-If-gAZ"/>
+                    <constraint firstItem="vtM-GY-p24" firstAttribute="leading" secondItem="dZg-26-r7Y" secondAttribute="trailing" constant="10" id="ufC-Vj-KdI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="contentImageView" destination="dZg-26-r7Y" id="nz8-LE-3No"/>
+                <outlet property="contentImageViewHeight" destination="QS1-fR-C9r" id="HHl-IS-6QM"/>
+                <outlet property="contentImageViewWidth" destination="QT0-AJ-uPP" id="snT-bh-4ww"/>
+                <outlet property="headerImageView" destination="vtM-GY-p24" id="3sD-jq-GKF"/>
+            </connections>
+            <point key="canvasLocation" x="-145" y="3"/>
+        </tableViewCell>
+    </objects>
+</document>

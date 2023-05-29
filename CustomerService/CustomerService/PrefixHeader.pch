@@ -1,0 +1,64 @@
+//
+//  PrefixHeader.pch
+//  CustomerService
+//
+//  Created by 李杭玖 on 2023/5/22.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "CustomerBaseNavigationController.h"
+#import "CustomerBaseViewController.h"
+
+#import "CustomerConfig.h"
+#import "CustomerUtils.h"
+
+#import "CustomerReachability.h"
+#import "CustomerRequestHelper.h"
+
+#import "NSDictionary+Customer.h"
+#import "UIColor+Customer.h"
+#import "UIView+Customer.h"
+
+#import <SVProgressHUD.h>
+#import <AFNetworking.h>
+#import <IQKeyboardManager.h>
+#import <MJRefresh.h>
+#import <SDAutoLayout.h>
+#import <SDWebImage.h>
+#import <SocketRocket.h>
+#import <SVProgressHUD.h>
+#import <Toast/Toast.h>
+#import <TZImagePickerController.h>
+
+#define ScreenWidth [[UIScreen mainScreen] bounds].size.width
+#define ScreenHeight [[UIScreen mainScreen] bounds].size.height
+
+//导航栏高度
+#define kNavBarHeight (44)
+
+//工具栏高度
+#define kTabBarHeight (49)
+
+//顶部安全距离高度
+#define kTopSafeHeight ({\
+    UIWindow *window = [UIApplication sharedApplication].windows.firstObject;\
+    UIEdgeInsets topSafeAreaInsets = window.safeAreaInsets;\
+    topSafeAreaInsets.top;\
+})
+
+//底部安全距离高度
+#define kBottomSafeHeight ({\
+    UIWindow *window = [UIApplication sharedApplication].windows.firstObject;\
+    UIEdgeInsets bottomSafeAreaInsets = window.safeAreaInsets;\
+    bottomSafeAreaInsets.bottom;\
+})
+
+#define NAVIHEIGHT kNavBarHeight+kTopSafeHeight
+#define TABBARHEIGHT kTabBarHeight+kBottomSafeHeight
+
+#endif /* PrefixHeader_pch */
